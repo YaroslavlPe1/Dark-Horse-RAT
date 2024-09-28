@@ -1,3 +1,7 @@
+
+![title](res/dark.png)
+
+
 # 💕 Добро пожаловать друг 💕
 
 ## 🤖 Я создатель унекального програмного обечения для создания: 
@@ -17,4 +21,5 @@
 
 
 
-[![Softmax](./resources/softmax.webp)](https://gitverse.ru/new_horizons/NeuralNetworks/content/master/articles/article2)
+
+
