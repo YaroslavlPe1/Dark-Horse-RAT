@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e0e0e0; /* Сероватый фон страницы */
+}
+
+h1 {
+    color: #333; /* Темно-серый заголовок */
+}
+
+h2 {
+    color: #ffffff; /* Темно-серый заголовок */
+}
+.editor-container {
+    display: flex;
+}
+
+textarea {
+    width: 70%;
+    height: 400px;
+    border: 2px solid #ccc; /* Серый бордер */
+    border-radius: 0; /* Углы острые */
+    padding: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    resize: none;
+    background-color: #f0f0f0; /* Светло-серый фон текстовой области */
+    color: #000000; /* Золотой текст в редакторе */
+}
+
+.terminal-container {
+    width: 30%;
+    border: 2px solid #ccc; /* Серый бордер */
+    border-radius: 0; /* Углы острые */
+    padding: 10px;
+    background-color: #333; /* Темно-серый фон терминала */
+    color: #ddd; /* Светло-серый текст в терминале */
+    overflow-y: auto;
+    height: 400px; /* Высота терминала */
+    margin-left: 20px; /* Отступ слева */
+}
+
+#terminal {
+    white-space: pre-wrap; /* Позволяет переносить строки */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; /* Углы кнопок закруглены */
+    background-color: #888; /* Серый фон для кнопок */
+    color: white; /* Белый текст для кнопок */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777; /* Темнее при наведении */
+}
+
+.code-block {
+    background-color: #ccc; /* Серый фон для блоков кода */
+    color: #000; /* Черный текст для блоков кода */
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block; /* Блоки в строку */
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+.code-block:hover {
+    background-color: #bbb; /* Цвет при наведении на блоки */
+}

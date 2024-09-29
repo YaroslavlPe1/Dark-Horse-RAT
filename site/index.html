@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Code Editor</title>
+</head>
+<body>
+<h1>Code Editor</h1>
+<div class="editor-container">
+    <textarea id="code" spellcheck="false" placeholder="Введите ваш код здесь..."></textarea>
+    <div class="terminal-container">
+        <h2>Терминал</h2>
+        <pre id="terminal"></pre> <!-- Здесь будет вывод терминала -->
+    </div>
+</div>
+<div>
+    <button id="downloadBtn">Скачать код</button>
+    <button id="runBtn">Запустить</button>
+</div>
+
+<h1>Блоки кода</h1>
+<div id="code-blocks">
+    <button class="code-block" data-code="console.log('Hello, World!');">Console.log</button>
+    <button class="code-block" data-code="if (true) {\n    console.log('True!');\n}">If-Statement</button>
+    <button class="code-block" data-code="function myFunction() {\n    console.log('Function called');\n}">Function</button>
+    <button class="code-block" data-code="let x = 5;\nconsole.log(x);">Let Statement</button>
+    <button class="code-block" data-code="const y = 10;\nconsole.log(y);">Const Statement</button>
+    <button class="code-block" data-code="var z = 15;\nconsole.log(z);">Var Statement</button>
+    <button class="code-block" data-code="for (let i = 0; i < 5; i++) {\n    console.log(i);\n}">For Loop</button>
+    <button class="code-block" data-code="while (true) {\n    break;\n}">While Loop</button>
+    <button class="code-block" data-code="do {\n    console.log('Do-While Loop');\n} while (false);">Do-While Loop</button>
+    <button class="code-block" data-code="switch (x) {\n    case 1:\n        console.log('One');\n        break;\n    default:\n        console.log('Not One');\n}">Switch Statement</button>
+    <button class="code-block" data-code="let array = [1, 2, 3];\narray.forEach(num => console.log(num));">Array forEach</button>
+    <button class="code-block" data-code="let sum = (a, b) => a + b;\nconsole.log(sum(5, 10));">Arrow Function</button>
+    <button class="code-block" data-code="let obj = {key: 'value'};\nconsole.log(obj.key);">Object Access</button>
+    <button class="code-block" data-code="let arr = [1, 2, 3];\nlet [first, second] = arr;\nconsole.log(first, second);">Destructuring</button>
+    <button class="code-block" data-code="try {\n    throw new Error('Error!');\n} catch (e) {\n    console.log(e);\n}">Try-Catch</button>
+    <button class="code-block" data-code="setTimeout(() => console.log('Delayed'), 1000);">setTimeout</button>
+    <button class="code-block" data-code="setInterval(() => console.log('Repeating'), 1000);">setInterval</button>
+    <button class="code-block" data-code="let promise = new Promise((resolve, reject) => {\n    resolve('Success');\n});\npromise.then(console.log);">Promise</button>
+    <button class="code-block" data-code="async function fetchData() {\n    let response = await fetch('https://api.example.com');\n    console.log(response);\n}">Async Function</button>
+    <button class="code-block" data-code="let nums = [1, 2, 3];\nlet doubled = nums.map(num => num * 2);\nconsole.log(doubled);">Array map</button>
+    <button class="code-block" data-code="let filtered = nums.filter(num => num > 1);\nconsole.log(filtered);">Array filter</button>
+    <button class="code-block" data-code="let reduced = nums.reduce((acc, num) => acc + num, 0);\nconsole.log(reduced);">Array reduce</button>
+    <button class="code-block" data-code="let items = ['apple', 'banana', 'cherry'];\nconsole.log(items.includes('banana'));">Array includes</button>
+    <button class="code-block" data-code="function greeting(name) {\n    return 'Hello, ' + name;\n}\nconsole.log(greeting('World'));">Greeting Function</button>
+    <button class="code-block" data-code="let currentDate = new Date();\nconsole.log(currentDate);">Date Object</button>
+    <button class="code-block" data-code="console.log(Math.random());">Random Number</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
